@@ -26,7 +26,7 @@ In the section below, create an **unordered list** of the three articles you fou
 ## Accompanying Image 
 In this section, please **display one image** to accompany your text, and describe _why_ you included it (~2 - 3 sentences). This will require that you download an image into your project folder. In your description, use **bold** and _italics_ (at least once, for practice) to emphasize some of your points. 
 
-	![BLM protest met with violence](pic.jpg)
+	![BLM protest met with violence](/pic.jpg)
 
 ## Analysis
 At this point, you should open up your `analysis.R` script to begin working with the data. The script will guide you through an initial analysis of the data. Throughout the script, there are prompts labeled **Reflection**. Please write 1 - 2 sentences for each of these reflections below:
