@@ -14,13 +14,22 @@
 # In this section, you're loading the data and necessary packages.
 # Load the `stringr` package, which you'll use later.
 
+library(stringr)
+
 # Load the data from https://countlove.org/data/data.csv
 # into a variable called `protests`
 
+protests <- read.csv("data.csv")
+
 # How many protests are in the dataset? `num_protests`
+
+#38097
+num_protests <- nrow(protests)
 
 # How much information is available about each protest? `num_features`
 
+#8
+num_features <- ncol(protests)
 
 # Part 2: Attendees -------------------------------------------------------
 
@@ -28,17 +37,35 @@
 
 # Extract the `Attendees` column into a variable called `num_attendees`
 
+
+num_attendees <- na.omit(protests$Attendees)
+
 # What is the lowest number of attendees? `min_attendees`
 # (hint for this and other calculations: you'll need to consider missing values)
 
+#0
+min_attendees <- min(num_attendees)
+
 # What is the highest number of attendees? `max_attendees`
 
+#725000
+max_attendees <- max(num_attendees)
+  
 # What is the mean number of attendees? `mean_attendees`
+
+#643.883
+mean_attendees <- mean(num_attendees)
 
 # What is the median number of attendees? `median_attendees`
 
+#100
+median_attendees <- median(num_attendees)
+
 # What is the difference between the mean and median number of attendees?
 # `mean_median_diff`
+  
+#543.883
+mean_median_diff <- mean_attendees - median_attendees
 
 # Reflection: What does the difference between the mean and the median
 # tell you about the *distribution* of the data? (if you're unfamiliar with
@@ -50,9 +77,13 @@
 # (Note, we'll use much more refined plotting methods, and pay far
 # more attention to detail later in the course)
 
+attendees_distribution <- boxplot(num_attendees)
+
 # Create another boxplot of the *log* of the number of attendees.
 # Store the plot in a variable `log_attendees_distribution`.
 # (note, you will see a warning in the console, which is expected)
+
+log_attendees_distribution <- boxplot(lapply(num_attendees, log))
 
 
 # Part 3: Locations -------------------------------------------------------
