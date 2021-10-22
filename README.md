@@ -17,6 +17,9 @@ In the section below, create an **unordered list** of the three articles you fou
 	+ In this article, the author mentions that about 93% of protests following the death of George Floyd have been peaceful, yet authorities intervened in BLM protests 
 	more than other types of protests. Also there were casees in Seattle and Portland where the protests became more violence when authorities interevened, or counterprotests
 	that became violent because militias and other nonstate actors intervened.
+* [Black Lives Matter May Be the Largest Movement in U.S. History](https://www.nytimes.com/interactive/2020/07/03/us/george-floyd-protests-crowd-size.html)
+	+ In this article, the authors state that when the BLM protests hit its climax in June 6, half a million people participated in protests in almost 550 locations, but that was only one day in a movement that is still continuing today. 
+	This article also showed research that about 15 to 26 milion people in the US have once taken part in a BLM protest, and that this number of people would make the BLM movement the protest with the most participants.
 
 ## Accompanying Image 
 In this section, please **display one image** to accompany your text, and describe _why_ you included it (~2 - 3 sentences). This will require that you download an image into your project folder. In your description, use **bold** and _italics_ (at least once, for practice) to emphasize some of your points. 
