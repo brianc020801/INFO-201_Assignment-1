@@ -20,7 +20,9 @@ In the section below, create an **unordered list** of the three articles you fou
 * [Black Lives Matter May Be the Largest Movement in U.S. History](https://www.nytimes.com/interactive/2020/07/03/us/george-floyd-protests-crowd-size.html)
 	+ In this article, the authors state that when the BLM protests hit its climax in June 6, half a million people participated in protests in almost 550 locations, but that was only one day in a movement that is still continuing today. 
 	This article also showed research that about 15 to 26 milion people in the US have once taken part in a BLM protest, and that this number of people would make the BLM movement the protest with the most participants.
-
+* [Armed protests are picking up, and a new study says they're more likely to turn violent](https://www.usatoday.com/story/news/nation/2021/08/23/guns-protests-increase-likelihood-violence/8188602002/)
+	+ In this article, the author provides a study that shows that armed protests are more prone to turn violent than unarmed protest, six times more likely to be exact, this study analyuzed more than 30,000 protests in the US over the span of 18 months.
+	The study also states that in the research, 1/6 armed protests turned violent while 1/37 unarmed protests turned violent.
 ## Accompanying Image 
 In this section, please **display one image** to accompany your text, and describe _why_ you included it (~2 - 3 sentences). This will require that you download an image into your project folder. In your description, use **bold** and _italics_ (at least once, for practice) to emphasize some of your points. 
 
