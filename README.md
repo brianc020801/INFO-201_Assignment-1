@@ -33,7 +33,7 @@ At this point, you should open up your `analysis.R` script to begin working with
 
 - What does the difference between the mean and the median tell you about the *distribution* of the data?  
   
-The difference tells us whether the the data is more distributed towards the higher number or the lower        number. The mean is the average while the median is the middle of all the data, if median and mean is equal    that means that the data is evenly distributed, if the mean is greater than the median, which is true in this case, then the data is positively skewed, which means more data is distributed on the lower side.
+    The difference tells us whether the the data is more distributed towards the higher number or the lower        number. The mean is the average while the median is the middle of all the data, if median and mean is equal     that means that the data is evenly distributed, if the mean is greater than the median, which is true in       this   case, then the data is positively skewed, which means more data is distributed on the lower side.
   
 - Does the number of protests in Washington surprise you? Why or why not?
 - Looking at the `state_table` variable, what data quality issues do you notice, and how would you use that to change your analysis (no need to actually change your analysis)?
