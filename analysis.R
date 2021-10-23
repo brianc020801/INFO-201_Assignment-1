@@ -121,17 +121,31 @@ prop_in_wa <- (num_in_wa / num_protests) * 100
 # Note, you should count the number of locations that *match* the parameter
 # put into the function, so `Seattle` should be a match for "Seattle, WA"
 
+count_in_location <- function(location){
+  num_in_location <- nrow(protests[str_detect(protests$Location, location),])
+  output <- sprintf("There were %i protests in %s", num_in_location, location)
+  return(output)
+}
+
 # Use your function above to describe the number of protests in "Washington, DC"
 # `dc_summary`
 
+dc_summary <- count_in_location("Washington, DC")
+
 # Use your function above to describe the number of protests in "Minneapolis"
 # `minneapolis_summary`
+
+minneapolis_summary <- count_in_location("Minneapolis")
 
 # Create a new vector `states` which is the last two characters of each
 # value in the `locations` vector. Hint, you may want to again use the
 # `stringr` package
 
+states <- c(str_sub(locations, -2, -1))
+
 # Create a vector of the unique states in your dataset. `uniq_states`
+
+uniq_states <- unique(states)
 
 # Create a summary sentence for each state by passing your `uniq_states`
 # variable and `count_in_location` variables to the `sapply()` function.
@@ -139,8 +153,13 @@ prop_in_wa <- (num_in_wa / num_protests) * 100
 # (don't miss how amazing this is! Very powerful to apply your function to an
 # entire vector *at once* with `sapply()`)
 
+state_summary <- sapply(uniq_states, count_in_location)
+
 # Create a summary table by passing your `states` variable to the `table()`
 # funciton, and storing the result in a variable `state_table`.
+
+state_table <- table(states)
+View(state_table)
 
 # Optional: use the View() function to more easily read the table
 
@@ -151,6 +170,7 @@ prop_in_wa <- (num_in_wa / num_protests) * 100
 # What was the maximum number of protests in a state? `max_in_state`
 # (hint: use your `state_table` variable)
 
+max_in_state <- max(state_table)
 
 # Part 4: Dates -----------------------------------------------------------
 
