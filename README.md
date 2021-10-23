@@ -33,13 +33,16 @@ At this point, you should open up your `analysis.R` script to begin working with
 
 - What does the difference between the mean and the median tell you about the *distribution* of the data?  
   
-    The difference tells us whether the the data is more distributed towards the higher number or the lower number. The mean is the average while the median is the middle of all the data, if median and mean is equal that means that the     data is evenly distributed, if the mean is greater than the median, which is true in this case, then the data is positively skewed, which means more data is distributed on the lower side.
+    The difference tells us whether the the data is more distributed towards the higher number or the lower number. The mean is the average while the median is the middle of all the data, if median and mean is equal that means that the data is evenly distributed, if the mean is greater than the median, which is true in this case, then the data is positively skewed, which means more data is distributed on the lower side.
   
 - Does the number of protests in Washington surprise you? Why or why not?
 
-    The data number doesn't really surprise me considering what a diverse state Washington is being some part of the state being liberal and other parts of the state being conservative. I believe that this creates a lot of                 opportunities for people in Washington to protest when there are social events happening since people in Washington could protest to both sides of the issue.
+    The data number doesn't really surprise me considering what a diverse state Washington is being some part of the state being liberal and other parts of the state being conservative. I believe that this creates a lot of opportunities for people in Washington to protest when there are social events happening since people in Washington could protest to both sides of the issue.
     
 - Looking at the `state_table` variable, what data quality issues do you notice, and how would you use that to change your analysis (no need to actually change your analysis)?
+    
+    I could see that there are some state names that wasn't all capitalized, resulting in duplicate states that should've been counted together. For my analysis I needed to check the states regardless of their cases in order to take into consideration the states that wasn't correctly capitalized.
+    
 - Does the change in the number of protests from 2019 to 2020 surprise you? Why or why not?
 - Do a bit of research. Find at least *two specific policies* that have been changed as a result of protests in 2020. These may be at the city, state, or University level. Please provide a basic summary, as well as a link to each article.
 - Take a look (`View()`) your `high_level_table` variable. What picture does this paint of the U.S.?
