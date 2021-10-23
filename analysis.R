@@ -77,13 +77,13 @@ mean_median_diff <- mean_attendees - median_attendees
 # (Note, we'll use much more refined plotting methods, and pay far
 # more attention to detail later in the course)
 
-attendees_distribution <- boxplot(num_attendees)
+#attendees_distribution <- boxplot(num_attendees)
 
 # Create another boxplot of the *log* of the number of attendees.
 # Store the plot in a variable `log_attendees_distribution`.
 # (note, you will see a warning in the console, which is expected)
 
-log_attendees_distribution <- boxplot(lapply(num_attendees, log))
+#log_attendees_distribution <- boxplot(lapply(num_attendees, log))
 
 
 # Part 3: Locations -------------------------------------------------------
@@ -92,12 +92,23 @@ log_attendees_distribution <- boxplot(lapply(num_attendees, log))
 
 # Extract the `Location` column into a variable called `locations`
 
+locations <- protests$Location
+
 # How many *unique* locations are in the dataset? `num_locations`
+  
+#10037
+num_locations <- length(unique(locations))
 
 # How many protests occured in Washington? `num_in_wa`
 # (hint: use a function from the stringr package to detect the letters "WA")
 
+#1375
+num_in_wa <- nrow(protests[str_detect(protests$Location, "WA"),])
+
 # What proportion of protests occured in Washington? `prop_in_wa`
+
+#3.609%
+prop_in_wa <- (num_in_wa / num_protests) * 100
 
 # Reflection: Does the number of protests in Washington surprise you?
 # Why or why not?
