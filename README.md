@@ -31,8 +31,8 @@ In this section, please **display one image** to accompany your text, and descri
 ## Analysis
 At this point, you should open up your `analysis.R` script to begin working with the data. The script will guide you through an initial analysis of the data. Throughout the script, there are prompts labeled **Reflection**. Please write 1 - 2 sentences for each of these reflections below:
 
-- What does the difference between the mean and the median tell you about the *distribution* of the data?
-  The difference tells us whether the the data is more distributed towards the higher number or the lower        number. The mean is the average while the median is the middle of all the data, if median and mean is equal    that means that the data is evenly distributed, if the mean is greater than the median, which is true in this   case, then the data is positively skewed, which means more data is distributed on the lower side.
+- What does the difference between the mean and the median tell you about the *distribution* of the data?  
+The difference tells us whether the the data is more distributed towards the higher number or the lower        number. The mean is the average while the median is the middle of all the data, if median and mean is equal    that means that the data is evenly distributed, if the mean is greater than the median, which is true in this case, then the data is positively skewed, which means more data is distributed on the lower side.
 - Does the number of protests in Washington surprise you? Why or why not?
 - Looking at the `state_table` variable, what data quality issues do you notice, and how would you use that to change your analysis (no need to actually change your analysis)?
 - Does the change in the number of protests from 2019 to 2020 surprise you? Why or why not?
