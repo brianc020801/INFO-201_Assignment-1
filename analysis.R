@@ -103,7 +103,7 @@ num_locations <- length(unique(locations))
 # (hint: use a function from the stringr package to detect the letters "WA")
 
 #1375
-num_in_wa <- nrow(protests[str_detect(protests$Location, "WA"),])
+num_in_wa <- nrow(protests[str_detect(locations, "WA"),])
 
 # What proportion of protests occured in Washington? `prop_in_wa`
 
@@ -159,7 +159,6 @@ state_summary <- sapply(uniq_states, count_in_location)
 # funciton, and storing the result in a variable `state_table`.
 
 state_table <- table(states)
-View(state_table)
 
 # Optional: use the View() function to more easily read the table
 
@@ -180,19 +179,37 @@ max_in_state <- max(state_table)
 # column to the `as.Date()` function (this will process the values as dates,
 # which are *luckily* already in an optimal format for parsing)
 
+dates <- as.Date(protests$Date)
+
 # What is the most recent date in the dataset? `most_recent`
 
+#2021-01-31 UTC
+most_recent <- max(dates)
+
 # What is the earliest date in the dataset? `earliest`
+
+#2017-01-15 UTC
+earliest <- min(dates)
 
 # What is the length of the timespan of the dataset? `time_span`
 # hint: R can do math with dates pretty well by default!
 
+#1477 days
+time_span <- as.integer(most_recent - earliest)
+
 # Create a vector of the dates that are in 2020 `in_2020`
+
+in_2020 <- protests[protests$Date > as.Date("2019-12-31"), "Date"]
 
 # Create a vector of the dates that are in 2019. `in_2019`
 
+in_2019 <- protests[protests$Date > as.Date("2018-12-31"), "Date"]
+
 # What is the ratio of the number of protests in 2020 comparted to 2019?
 # `ratio_2020_2019`
+
+#0.70786
+ratio_2020_2019 <- length(in_2020)/length(in_2019)
 
 # Reflection: Does the change in the number of protests from 2019 to 2020
 # surprise you? Why or why not?

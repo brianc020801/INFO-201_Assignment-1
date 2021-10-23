@@ -44,6 +44,8 @@ At this point, you should open up your `analysis.R` script to begin working with
     I could see that there are some state names that wasn't all capitalized, resulting in duplicate states that should've been counted together. For my analysis I needed to check the states regardless of their cases in order to take into consideration the states that wasn't correctly capitalized.
     
 - Does the change in the number of protests from 2019 to 2020 surprise you? Why or why not?
+
+
 - Do a bit of research. Find at least *two specific policies* that have been changed as a result of protests in 2020. These may be at the city, state, or University level. Please provide a basic summary, as well as a link to each article.
 - Take a look (`View()`) your `high_level_table` variable. What picture does this paint of the U.S.?
 
