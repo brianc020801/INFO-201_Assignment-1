@@ -19,7 +19,7 @@ library(stringr)
 # Load the data from https://countlove.org/data/data.csv
 # into a variable called `protests`
 
-protests <- read.csv("data.csv")
+protests <- read.csv("D:/INFO 201/assignment-1-foundations-mastery-protests-brianc0801/data.csv")
 
 # How many protests are in the dataset? `num_protests`
 
