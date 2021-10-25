@@ -122,7 +122,7 @@ prop_in_wa <- (num_in_wa / num_protests) * 100
 # put into the function, so `Seattle` should be a match for "Seattle, WA"
 
 count_in_location <- function(location){
-  num_in_location <- length(protests[str_detect(protests$Location, location), "Location"])
+  num_in_location <- length(protests[str_detect(locations, location), "Location"])
   output <- sprintf("There were %i protests in %s", num_in_location, location)
   return(output)
 }
@@ -220,7 +220,7 @@ ratio_2020_2019 <- length(in_2020) / length(in_2019)
 # date, and DATE is the date provided
 
 count_on_date <- function(date){
-  num_in_date <- length(protests[protests$Date == as.Date(date), "Date"])
+  num_in_date <- length(protests[dates == as.Date(date), "Date"])
   output <- sprintf("There were %i protests on %s", num_in_date, date)
   return(output)
 }
@@ -234,6 +234,7 @@ num_may_24 <- count_on_date("2020-05-24")
 # Using your function you just wrote, how many protests were there on
 # May 31th, 2020? `num_on_may_31`
 
+#487
 num_on_may_31 <- count_on_date("2020-05-31")
 
 # For more on this timeline, see:
@@ -300,10 +301,15 @@ high_level_table <- table(high_level_purpse)
 # picture does this paint of the U.S.?
 
 
-
 # Part 6: Independent Exploration -----------------------------------------
 
 # As a last step, you should write your own function that allows you to
 # quickly ask questions of the dataset. For example, in the above sections,
 # you wrote functions to ask the same question about different months, or
 # locations. If you need any guidance here, feel free to ask!
+
+count_of_high_level_purpose <- function(high_purpose){
+  num_of_purpose <- length(na.omit((high_level_purpse)[high_level_purpse == high_purpose]))
+  output <- sprintf("There were %i protests about %s", num_of_purpose, high_purpose)
+  return(output)
+}
