@@ -57,6 +57,8 @@ At this point, you should open up your `analysis.R` script to begin working with
 
 - Take a look (`View()`) your `high_level_table` variable. What picture does this paint of the U.S.?
 
+  From the table, I could tell that the most protests not county the "Other" category would be "Guns" followed by "Civil Rights". This shows that the US is still in a state where the 2nd Amendment is still a big controversy as well as racism since both of those categories were the the two most protested disregarding the "Others" category.
+
 ## Critical Reflection
 Now that you have had time to work with the data and visualize it, I want you to practice thinking critically about the dataset we provided. An important part of data analysis is reflecting on the assumptions, limitations, and gaps in your datasets. Remember that all datasets have to make assumptions and not all assumptions are bad or unreasonable! Practicing these skill will help you in your career to be self critical and ethically alert.
 
