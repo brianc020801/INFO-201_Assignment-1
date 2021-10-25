@@ -50,7 +50,10 @@ At this point, you should open up your `analysis.R` script to begin working with
 - Do a bit of research. Find at least *two specific policies* that have been changed as a result of protests in 2020. These may be at the city, state, or University level. Please provide a basic summary, as well as a link to each article.
   
   [Cities and states across the US announce police reform following demands for change](https://www.usatoday.com/in-depth/news/2020/06/18/2020-protests-impact-city-and-state-changes-policing/5337751002/)  
-  In this article, it was said that due to the protests, cities and states in the US are starting to reevaluate **police policies**. The most popular change that cities and states began to implement is the ban on chokeholds or neck restraints, but there are also other changes that was also added, such as decreased funding, increased transparency, and required deescalation.
+  In this article, it was said that due to the protests, cities and states in the US are starting to reevaluate **police policies**. The most popular change that cities and states began to implement is the ban on chokeholds or neck restraints, but there are also other changes that was also added, such as decreased funding, increased transparency, and required deescalation. This is the **Justice Policing Act of 2020**.
+
+  [House Passes New Bill To Abolish Qualified Immunity For Police](https://www.forbes.com/sites/nicksibilla/2021/03/04/house-passes-new-bill-to-abolish-qualified-immunity-for-police/)  
+  In this article, it said that the house passed a New Bill to abolish the **Qualified Immunity** for the police. This means that the local, state, and federal law enforcement officers can no longer be held not responsible for civil rights violations unless the victims can show that their rights were clearly established. Due to the protest about the death of George Floyd, the government passed this bill in order for the police officer who killed George Floyd to be able to be held responsible for his death.
 
 - Take a look (`View()`) your `high_level_table` variable. What picture does this paint of the U.S.?
 
