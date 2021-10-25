@@ -48,6 +48,10 @@ At this point, you should open up your `analysis.R` script to begin working with
     The change in number of protests from 2019 to 2020 is 6548 protests less, which means that there was less protests in 2020 compared to 2019. This was surprising because of the BLM movements that had occurred and with more people willing to speak up nowadays, it was surprising to see that the numbers of protests had lowered rather than rose.
 
 - Do a bit of research. Find at least *two specific policies* that have been changed as a result of protests in 2020. These may be at the city, state, or University level. Please provide a basic summary, as well as a link to each article.
+  
+  [Cities and states across the US announce police reform following demands for change](https://www.usatoday.com/in-depth/news/2020/06/18/2020-protests-impact-city-and-state-changes-policing/5337751002/)
+  In this article, it was said that due to the protests, cities and states in the US are starting to reevaluate **police policies**. The most popular change that cities and states began to implement is the ban on chokeholds or neck restraints, but there are also other changes that was also added, such as decreased funding, increased transparency, and required deescalation.
+
 - Take a look (`View()`) your `high_level_table` variable. What picture does this paint of the U.S.?
 
 ## Critical Reflection

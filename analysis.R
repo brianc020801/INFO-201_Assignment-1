@@ -251,6 +251,7 @@ by_month_table <- table(c(months(in_2020)))
 # July 2019? You'll want to do this in multiple steps as you see fit, though
 # your answer should be stored in the variable `change_july_protests`.
 
+#-663
 protest_in_july_2019 <- length(c(months(in_2019))[c(months(in_2019) == "July")])
 protest_in_july_2020 <- length(c(months(in_2020))[c(months(in_2020) == "July")])
 change_july_protets <- protest_in_july_2020 - protest_in_july_2019
