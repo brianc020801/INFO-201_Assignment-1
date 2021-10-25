@@ -64,7 +64,10 @@ Now that you have had time to work with the data and visualize it, I want you to
 
 For this section, please write 2-3 sentences for each of the reflections below:
 
-- How was the dataset collected and who collected the data? 
+- How was the dataset collected and who collected the data?
+  
+  The dataset was collected by an organization called Count Love. The dataset was good with just a few mistakes such as the state abbreviation not uniformly capitalized for all the dataset.
+  
 - What assumptions does the dataset make? List atleast two assumptions you identified. For inspiration, check out this [blog post](https://towardsdatascience.com/check-your-assumptions-about-your-data-20be250c143) that describes one method for identifying data assumptions.   
 - What data is missing from the dataset? Think about if there are any data points you would have liked to have seen in the dataset. 
 
