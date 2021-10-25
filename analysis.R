@@ -19,7 +19,7 @@ library(stringr)
 # Load the data from https://countlove.org/data/data.csv
 # into a variable called `protests`
 
-protests <- read.csv("D:/INFO 201/assignment-1-foundations-mastery-protests-brianc0801/data.csv")
+protests <- read.csv("data.csv")
 
 # How many protests are in the dataset? `num_protests`
 
@@ -122,7 +122,7 @@ prop_in_wa <- (num_in_wa / num_protests) * 100
 # put into the function, so `Seattle` should be a match for "Seattle, WA"
 
 count_in_location <- function(location){
-  num_in_location <- nrow(protests[str_detect(protests$Location, location),])
+  num_in_location <- length(protests[str_detect(protests$Location, location), "Location"])
   output <- sprintf("There were %i protests in %s", num_in_location, location)
   return(output)
 }
@@ -199,17 +199,17 @@ time_span <- as.integer(most_recent - earliest)
 
 # Create a vector of the dates that are in 2020 `in_2020`
 
-in_2020 <- protests[protests$Date > as.Date("2019-12-31"), "Date"]
+in_2020 <- as.Date(protests[dates > as.Date("2019-12-31"), "Date"])
 
 # Create a vector of the dates that are in 2019. `in_2019`
 
-in_2019 <- protests[protests$Date > as.Date("2018-12-31"), "Date"]
+in_2019 <- as.Date(protests[dates > as.Date("2018-12-31"), "Date"])
 
 # What is the ratio of the number of protests in 2020 comparted to 2019?
 # `ratio_2020_2019`
 
 #0.70786
-ratio_2020_2019 <- length(in_2020)/length(in_2019)
+ratio_2020_2019 <- length(in_2020) / length(in_2019)
 
 # Reflection: Does the change in the number of protests from 2019 to 2020
 # surprise you? Why or why not?
@@ -219,11 +219,22 @@ ratio_2020_2019 <- length(in_2020)/length(in_2019)
 # "There were N protests on DATE.", where N is the number of protests on that
 # date, and DATE is the date provided
 
+count_on_date <- function(date){
+  num_in_date <- length(protests[protests$Date == as.Date(date), "Date"])
+  output <- sprintf("There were %i protests on %s", num_in_date, date)
+  return(output)
+}
+
 # Using your function you just wrote, how many protests were there on
 # May 24th, 2020? `num_may_24`
 
+#8
+num_may_24 <- count_on_date("2020-05-24")
+
 # Using your function you just wrote, how many protests were there on
 # May 31th, 2020? `num_on_may_31`
+
+num_on_may_31 <- count_on_date("2020-05-31")
 
 # For more on this timeline, see:
 # https://www.nytimes.com/article/george-floyd-protests-timeline.html
@@ -232,10 +243,17 @@ ratio_2020_2019 <- length(in_2020)/length(in_2019)
 # Hint: use the `months()` function, your `in_2020` dates, and the `table()`
 # Function. If you like, you can do this in multiple different steps.
 
+
+by_month_table <- table(c(months(in_2020)))
+
 # As a comparison, let's assess the change between July 2019 and July 2020.
 # What is the *difference* in the number of protests between July 2020 and
 # July 2019? You'll want to do this in multiple steps as you see fit, though
 # your answer should be stored in the variable `change_july_protests`.
+
+protest_in_july_2019 <- length(c(months(in_2019))[c(months(in_2019) == "July")])
+protest_in_july_2020 <- length(c(months(in_2020))[c(months(in_2020) == "July")])
+change_july_protets <- protest_in_july_2020 - protest_in_july_2019
 
 # Reflection: do a bit of research. Find at least *two specific policies* that
 # have been changed as a result of protests in 2020. These may be at the
