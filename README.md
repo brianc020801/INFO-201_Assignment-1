@@ -26,7 +26,9 @@ In the section below, create an **unordered list** of the three articles you fou
 ## Accompanying Image 
 In this section, please **display one image** to accompany your text, and describe _why_ you included it (~2 - 3 sentences). This will require that you download an image into your project folder. In your description, use **bold** and _italics_ (at least once, for practice) to emphasize some of your points. 
 
-!["BML Protest Confronted With Armed Soldiers"](/img/pic.jpg)
+!["BLM Protest Confronted With Armed Soldiers"](/img/pic.jpg)
+
+This picture showed **unarmed** BLM protesters being confronted with **armed** soldiers who was supposedly sent there to _regulate_ the protest from becoming violent. This was _ironic_ because protests usually become violent after authorities become part of the protests.
 
 ## Analysis
 At this point, you should open up your `analysis.R` script to begin working with the data. The script will guide you through an initial analysis of the data. Throughout the script, there are prompts labeled **Reflection**. Please write 1 - 2 sentences for each of these reflections below:
@@ -66,14 +68,27 @@ For this section, please write 2-3 sentences for each of the reflections below:
 
 - How was the dataset collected and who collected the data?
   
-  The dataset was collected by an organization called Count Love. The dataset was good with just a few mistakes such as the state abbreviation not uniformly capitalized for all the dataset.
+  The dataset was collected by an organization called Count Love. The dataset was good with just a few mistakes such as the state abbreviation not uniformly capitalized for all the dataset. The dataset also wasn't clear on the purposes of the protests, the "Others" section had the most protests and I think a lot of them aren't sorted into their purposes carefully.
   
-- What assumptions does the dataset make? List atleast two assumptions you identified. For inspiration, check out this [blog post](https://towardsdatascience.com/check-your-assumptions-about-your-data-20be250c143) that describes one method for identifying data assumptions.   
-- What data is missing from the dataset? Think about if there are any data points you would have liked to have seen in the dataset. 
+- What assumptions does the dataset make? List atleast two assumptions you identified. For inspiration, check out this [blog post](https://towardsdatascience.com/check-your-assumptions-about-your-data-20be250c143) that describes one method for identifying data assumptions.  
+  
+  The dataset had NA protesters or 0 protesters which I wasn't sure about whether NA was 0 as well so that was an assumption that the dataset made was that NA attendees protests weren't the same as 0 attendees protests. The data set also recorded protests with very few attendees which I wasn't sure if it was reliable as it whether or not those protests could be counted as real protests. If the protests lasted for more than a day, I didn't know if it would be recorded as a new protest or not.
+  
+- What data is missing from the dataset? Think about if there are any data points you would have liked to have seen in the dataset.
+  
+  I think some dataset that we could add the duration of the protest, so we would know if a protest from a day was a protest that carried over or a new one that started that day. The dataset could also include whether or not the protest was violent, peaceful, or semi violent so we could see if at a certain point the protests became more violent.
 
 ## Final Thoughts
 When you are finished, with your analysis, please answer the following questions in 1-2 sentences each. 
 
 - What about the analysis surprised you?
+  
+  For me, finding out that there was this much protests in the US surprised me. Most of all I think that 2019 to 2020 total protests drop was a surprise because I thought that there is going to be more and more protets rather than less.
+  
 - What parts of this analysis did you find challenging?
+
+  I think part 6 was tricky. I tried to implement it the same way I did with location, but I found that there are many purposes whose non high level purpose part had high level purpose words in them, which made my original code count them as well, but once I figure that out it wasn't too bad.
+
 - What types of analysis do you wish you were able to do with the dataset, but currently don't have the technical skills to do?
+
+  I think it would be combining more filters into the functions, such as able to simultaneously find the date and the purpose of the protests that happened, or maybe to be able to graph them out into a map to see the geological connections in the dataset.
